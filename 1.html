@@ -102,6 +102,15 @@
   <div class="grid-item">7</div>
   <div class="grid-item">8</div>
   <div class="grid-item">9</div>
+
+  container--with-break {
+  grid-auto-flow: column;
+}
+.container--with-break > div {
+  grid-column: 1;
+}
+.container--with-break > .break ~ div {
+  grid-column: 2;
 </div>
 </div>
 
