@@ -70,7 +70,6 @@
   body {
     background-color: olive;
     color: white;
-  }
 <div class="grid-container">
   <div class="grid-item">1</div>
   <div class="grid-item">2</div>
@@ -78,6 +77,19 @@
   <div class="grid-item">4</div>
   <div class="grid-item">5</div>
   <div class="grid-item">6</div>
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header header  header"
+      "nav    content sidebar"
+      "nav    content ad"
+      "footer footer  footer";
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
   <div class="grid-item">7</div>
   <div class="grid-item">8</div>
   <div class="grid-item">9</div>
